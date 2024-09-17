@@ -22,7 +22,7 @@ public class NodePath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nodeCount != transform.childCount)
+        if (nodeCount != transform.childCount)
         {
             GetAllChildNodes();
         }
@@ -37,7 +37,7 @@ public class NodePath : MonoBehaviour
     void AddToNodesList()
     {
         // Re-adds all children
-        for(int nodeIndex = 0; nodeIndex < nodeCount; ++nodeIndex)
+        for (int nodeIndex = 0; nodeIndex < nodeCount; ++nodeIndex)
         {
             allNodes.Add(transform.GetChild(nodeIndex));
         }
@@ -49,7 +49,7 @@ public class NodePath : MonoBehaviour
         allNodes.Clear();
     }
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     // Gizmos that help visualize node path
     void OnDrawGizmos()
     {
@@ -61,20 +61,20 @@ public class NodePath : MonoBehaviour
         List<LineCoords> repeatLines = new List<LineCoords>();
 
         // Draws a line between all connected nodes
-        foreach(Transform node in allNodes)
+        foreach (Transform node in allNodes)
         {
             // Compares the currently selected node to its connected nodes
             Node currentNode = node.gameObject.GetComponent<Node>();
-            foreach(GameObject connectedNode in currentNode.connectedNodes)
+            foreach (GameObject connectedNode in currentNode.connectedNodes)
             {
                 Vector3 startPoint = currentNode.gameObject.transform.position;
                 Vector3 endPoint = connectedNode.transform.position;
 
                 // Turns line green if two nodes are connected to each other
                 // Turns white if its a one-way connection
-                foreach(LineCoords coordPair in repeatLines)
+                foreach (LineCoords coordPair in repeatLines)
                 {
-                    if((coordPair.startPoint == startPoint || coordPair.startPoint == endPoint) && (coordPair.endPoint == startPoint || coordPair.endPoint == endPoint))
+                    if ((coordPair.startPoint == startPoint || coordPair.startPoint == endPoint) && (coordPair.endPoint == startPoint || coordPair.endPoint == endPoint))
                     {
                         Gizmos.color = Color.green;
                         break;
@@ -92,7 +92,7 @@ public class NodePath : MonoBehaviour
             }
         }
     }
-    #endif
+#endif
 }
 
 // A line's coordinate pair. Used for drawing gizmos
@@ -101,7 +101,7 @@ public class LineCoords
     public Vector3 startPoint;
     public Vector3 endPoint;
 
-    public LineCoords(){}
+    public LineCoords() { }
 
     public LineCoords(Vector3 newStartPoint, Vector3 newEndPoint)
     {

@@ -25,7 +25,7 @@ public class PlayerBehaviour : MonoBehaviour
     // determines which node to move to and where it's located relative to current node
     void NodeMovement()
     {
-        foreach(GameObject targetNode in currentNode.connectedNodes)
+        foreach (GameObject targetNode in currentNode.connectedNodes)
         {
             Vector3 direction = targetNode.transform.position - currentNode.gameObject.transform.position;
             direction.Normalize();
@@ -38,30 +38,30 @@ public class PlayerBehaviour : MonoBehaviour
     // INEFFICIENT: Will modify later on
     void InputToMovement(Vector3 inputDirection, GameObject targetNode)
     {
-        if(inputDirection == Vector3.up)
+        if (inputDirection == Vector3.up)
         {
-            if(Input.GetKeyDown("w"))
+            if (Input.GetKeyDown("w"))
             {
                 ToNextNode(targetNode);
             }
         }
-        else if(inputDirection == Vector3.down)
+        else if (inputDirection == Vector3.down)
         {
-            if(Input.GetKeyDown("s"))
+            if (Input.GetKeyDown("s"))
             {
                 ToNextNode(targetNode);
             }
         }
-        else if(inputDirection == Vector3.right)
+        else if (inputDirection == Vector3.right)
         {
-            if(Input.GetKeyDown("d"))
+            if (Input.GetKeyDown("d"))
             {
                 ToNextNode(targetNode);
             }
         }
-        else if(inputDirection == Vector3.left)
+        else if (inputDirection == Vector3.left)
         {
-            if(Input.GetKeyDown("a"))
+            if (Input.GetKeyDown("a"))
             {
                 ToNextNode(targetNode);
             }

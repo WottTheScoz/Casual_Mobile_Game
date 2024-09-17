@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jo667825\\Casual_Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB68C7-6418-5C4A-8C5C-123EE11C6BE5}|Assembly-CSharp.csproj|c:\\users\\jo667825\\casual_game\\assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB68C7-6418-5C4A-8C5C-123EE11C6BE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB68C7-6418-5C4A-8C5C-123EE11C6BE5}|Assembly-CSharp.csproj|c:\\users\\jo667825\\casual_game\\assets\\scripts\\nodepath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB68C7-6418-5C4A-8C5C-123EE11C6BE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\nodepath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB68C7-6418-5C4A-8C5C-123EE11C6BE5}|Assembly-CSharp.csproj|c:\\users\\jo667825\\casual_game\\assets\\scripts\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB68C7-6418-5C4A-8C5C-123EE11C6BE5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Node.cs",
+              "DocumentMoniker": "C:\\Users\\jo667825\\Casual_Game\\Assets\\Scripts\\Node.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Node.cs",
+              "ToolTip": "C:\\Users\\jo667825\\Casual_Game\\Assets\\Scripts\\Node.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Node.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:08:26.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NodePath.cs",
+              "DocumentMoniker": "C:\\Users\\jo667825\\Casual_Game\\Assets\\Scripts\\NodePath.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NodePath.cs",
+              "ToolTip": "C:\\Users\\jo667825\\Casual_Game\\Assets\\Scripts\\NodePath.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NodePath.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAuwG4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:08:29.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\jo667825\\Casual_Game\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehaviour.cs",
+              "ToolTip": "C:\\Users\\jo667825\\Casual_Game\\Assets\\Scripts\\PlayerBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerBehaviour.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA8wEwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:08:32.019Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
