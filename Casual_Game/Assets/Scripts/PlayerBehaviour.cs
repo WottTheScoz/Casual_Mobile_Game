@@ -38,14 +38,14 @@ public class PlayerBehaviour : MonoBehaviour
     // INEFFICIENT: Will modify later on
     void InputToMovement(Vector3 inputDirection, GameObject targetNode)
     {
-        if (inputDirection == Vector3.up)
+        if (inputDirection == Vector3.forward)
         {
             if (Input.GetKeyDown("w"))
             {
                 ToNextNode(targetNode);
             }
         }
-        else if (inputDirection == Vector3.down)
+        else if (inputDirection == Vector3.back)
         {
             if (Input.GetKeyDown("s"))
             {
