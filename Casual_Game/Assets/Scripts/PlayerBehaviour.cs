@@ -6,13 +6,23 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public GameObject startNodeObj;
 
+    PlayerCollision collision;
+
+    Node prevNode;
     Node currentNode;
 
+    #region Unity Methods
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = startNodeObj.transform.position;
+        // gets the player's collision script.
+        collision = gameObject.GetComponent<PlayerCollision>();
 
+        // sets listeners to subscribers
+        collision.OnHitObstacle += ToPrevNode;
+
+        // sets player to starting node
+        transform.position = startNodeObj.transform.position;
         currentNode = startNodeObj.GetComponent<Node>();
     }
 
@@ -21,10 +31,13 @@ public class PlayerBehaviour : MonoBehaviour
     {
         NodeMovement();
     }
+    #endregion
 
+    #region Node System
     // determines which node to move to and where it's located relative to current node
     void NodeMovement()
     {
+        // Cycles through each connected node and checks for a corresponding input each frame
         foreach (GameObject targetNode in currentNode.connectedNodes)
         {
             Vector3 direction = targetNode.transform.position - currentNode.gameObject.transform.position;
@@ -38,40 +51,50 @@ public class PlayerBehaviour : MonoBehaviour
     // INEFFICIENT: Will modify later on
     void InputToMovement(Vector3 inputDirection, GameObject targetNode)
     {
-        if (inputDirection == Vector3.up)
+        if (inputDirection == Vector3.forward)
         {
             if (Input.GetKeyDown("w"))
             {
-                ToNextNode(targetNode);
+                ToNextNode(inputDirection, targetNode);
             }
         }
-        else if (inputDirection == Vector3.down)
+        else if (inputDirection == Vector3.back)
         {
             if (Input.GetKeyDown("s"))
             {
-                ToNextNode(targetNode);
+                ToNextNode(inputDirection, targetNode);
             }
         }
         else if (inputDirection == Vector3.right)
         {
             if (Input.GetKeyDown("d"))
             {
-                ToNextNode(targetNode);
+                ToNextNode(inputDirection, targetNode);
             }
         }
         else if (inputDirection == Vector3.left)
         {
             if (Input.GetKeyDown("a"))
             {
-                ToNextNode(targetNode);
+                ToNextNode(inputDirection, targetNode);
             }
         }
     }
 
     // Handles actual movement of the player to the next node
-    void ToNextNode(GameObject targetNode)
+    void ToNextNode(Vector3 inputDirection, GameObject targetNode)
     {
         transform.position = targetNode.transform.position;
+        prevNode = currentNode;
         currentNode = targetNode.GetComponent<Node>();
     }
+
+    // Returns player to previous node. Used by PlayerCollision
+    void ToPrevNode()
+    {
+        transform.position = prevNode.gameObject.transform.position;
+        currentNode = prevNode;
+    }
+    #endregion
 }
+
