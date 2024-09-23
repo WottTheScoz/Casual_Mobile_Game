@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/App UI/MainMenu.unity
     guid: 2f0137fabdef8794c9d361571b2f2b69
   - enabled: 1
+    path: Assets/Scenes/App UI/ModeSelection.unity
+    guid: 02f77a786c5760e4eb5e77f514c857c3
+  - enabled: 1
+    path: Assets/Scenes/App UI/StoryMode.unity
+    guid: 2039b64bcc9d35448b31770e1792bbdd
+  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: 1c851ff72a57d1e40afd3b1fb5d234dd
   m_configObjects: {}
