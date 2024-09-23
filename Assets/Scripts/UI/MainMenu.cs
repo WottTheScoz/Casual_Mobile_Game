@@ -1,4 +1,4 @@
-using System.Collections;
+/*Using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,3 +10,4 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level01");
     }
 }
+*/

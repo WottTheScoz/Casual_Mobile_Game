@@ -19,10 +19,18 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void Restart()
+    public void Restart() //Reusable code for other Level's
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Level01");
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+
+    }
+
+    public void Quit()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("StoryMode");
     }
 
 }
