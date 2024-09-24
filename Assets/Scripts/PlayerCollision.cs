@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class PlayerCollision : MonoBehaviour
         {
             OnHitObstacle?.Invoke();
             Debug.Log("Hit obstacle");
+        }
+
+        if(collider.gameObject.tag == "Exit")
+        {
+            SceneManager.LoadScene("GameWin");
         }
     }
 }
