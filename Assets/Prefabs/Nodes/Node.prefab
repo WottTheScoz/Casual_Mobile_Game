@@ -97,5 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isObstacle: 0
+  connectedTarget: {fileID: 0}
   connectedNodes:
   - {fileID: 0}
