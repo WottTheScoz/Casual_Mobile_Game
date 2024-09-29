@@ -6,7 +6,13 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public GameObject startNodeObj;
 
+    public bool usingTouchControls = false;
+
+    Vector3 moveDirection;
+
     PlayerCollision collision;
+    PlayerInputReader input;
+    SwipeControls swipeInput;
 
     Node prevNode;
     Node currentNode;
@@ -17,6 +23,12 @@ public class PlayerBehaviour : MonoBehaviour
     {
         // gets the player's collision script.
         collision = gameObject.GetComponent<PlayerCollision>();
+
+        // gets player input reader script
+        input = gameObject.GetComponent<PlayerInputReader>();
+
+        // gets swipe controls script
+        swipeInput = gameObject.GetComponent<SwipeControls>();
 
         // sets listeners to subscribers
         collision.OnHitObstacle += ToPrevNode;
@@ -29,6 +41,7 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateMoveDirection();
         NodeMovement();
     }
     #endregion
@@ -51,7 +64,7 @@ public class PlayerBehaviour : MonoBehaviour
     // INEFFICIENT: Will modify later on
     void InputToMovement(Vector3 inputDirection, GameObject targetNode)
     {
-        if (inputDirection == Vector3.forward)
+        /*if (inputDirection == Vector3.forward)
         {
             if (Input.GetKeyDown("w"))
             {
@@ -78,6 +91,11 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 ToNextNode(inputDirection, targetNode);
             }
+        }*/
+
+        if(inputDirection == moveDirection)
+        {
+            ToNextNode(inputDirection, targetNode);
         }
     }
 
@@ -94,6 +112,20 @@ public class PlayerBehaviour : MonoBehaviour
     {
         transform.position = prevNode.gameObject.transform.position;
         currentNode = prevNode;
+    }
+    #endregion
+
+    #region Movement
+    void UpdateMoveDirection()
+    {
+        if(usingTouchControls)
+        {
+            moveDirection = swipeInput.GetMoveDirection();
+        }
+        else
+        {
+            moveDirection = input.GetMoveDirection();
+        }
     }
     #endregion
 }
