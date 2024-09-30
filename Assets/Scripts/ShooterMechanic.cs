@@ -40,9 +40,4 @@ public class ShooterMechanic : MonoBehaviour
     {
         Destroy(bullet.gameObject);
     }
-        
-    void OnCollisionEnter(Collision other)
-    {
-        Destroy(bullet.gameObject);
-    }
 }
