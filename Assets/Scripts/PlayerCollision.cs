@@ -22,5 +22,10 @@ public class PlayerCollision : MonoBehaviour
         {
             SceneManager.LoadScene("GameWin");
         }
+
+        if(collider.gameObject.tag == "Enemy")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
