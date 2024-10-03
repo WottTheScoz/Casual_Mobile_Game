@@ -35,5 +35,9 @@ public class ShooterMechanic : MonoBehaviour
         bullet.AddForce(direction * speed, ForceMode.Impulse); 
        
     }
-        
+
+    void OnCollisionEnter(Collision other)
+    {
+        Destroy(bullet.gameObject);
+    }
 }
