@@ -32,6 +32,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         // sets listeners to subscribers
         collision.OnHitObstacle += ToPrevNode;
+        input.OnMove += Rotate;
 
         // sets player to starting node
         transform.position = startNodeObj.transform.position;
@@ -116,7 +117,9 @@ public class PlayerBehaviour : MonoBehaviour
     #endregion
 
     #region Movement
-    void UpdateMoveDirection()
+
+    // Gets the direction of the player's input (WASD/Swipe up, down, left, right)
+    Vector3 UpdateMoveDirection()
     {
         if(usingTouchControls)
         {
@@ -126,6 +129,15 @@ public class PlayerBehaviour : MonoBehaviour
         {
             moveDirection = input.GetMoveDirection();
         }
+
+        return moveDirection;
+    }
+
+    // Rotates the player based on input. Called with a delegate.
+    void Rotate()
+    {
+        //Debug.Log(moveDirection);
+        transform.rotation = Quaternion.LookRotation(UpdateMoveDirection());
     }
     #endregion
 }
