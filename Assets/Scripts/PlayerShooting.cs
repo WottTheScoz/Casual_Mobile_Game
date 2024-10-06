@@ -8,28 +8,28 @@ public class PlayerShooting : MonoBehaviour
 
     PlayerInputReader inputReader;
 
-    Camera mainCam;
+    //Camera mainCam;
 
     void Start()
     {
         inputReader = gameObject.GetComponent<PlayerInputReader>();
         inputReader.OnShoot += Shoot;
 
-        mainCam = Camera.main;
+        //mainCam = Camera.main;
     }
 
-    void Shoot(Vector3 shootDirection)
+    void Shoot()
     {
-        Event currentEvent = Event.current;
+        /*Event currentEvent = Event.current;
         Vector3 point;
 
         point = mainCam.ScreenToWorldPoint(shootDirection);
         point.Normalize();
-        point.y = 0;
+        point.y = 0;*/
 
         GameObject bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
             
-        bulletInstance.GetComponent<ShooterMechanic>().shoot(point);
-        transform.rotation = Quaternion.LookRotation(point);
+        bulletInstance.GetComponent<ShooterMechanic>().shoot(transform.forward);
+        //transform.rotation = Quaternion.LookRotation(point);
     }
 }

@@ -274,6 +274,17 @@
                 },
                 {
                     "name": "",
+                    "id": "59f48d59-0bbe-4c1f-b71f-3c9cfd62d8cd",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2c5ddd1c-fcd7-4691-87b0-e36f6440ef8a",
                     "path": "<Touchscreen>/Press",
                     "interactions": "",

@@ -5,25 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public GameObject[] patrolPoints;
-    int current = 0;
-    float rotSpeed;
+    public Transform[] patrolPoints;
+    int current;
     public float speed;
-    float pointRadius = 1;
 
+    private void Start()
+    {
+        current = 0;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if ((Vector2.Distance(patrolPoints[current].transform.position, transform.position) < pointRadius))
-            {
-            current++;
-            if(current >= patrolPoints.Length)
-            {
-                current = 0;
-            }
+        if (transform.position != patrolPoints[current].position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, patrolPoints[current].position, speed * Time.deltaTime);
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, patrolPoints[current].transform.position, Time.deltaTime * speed);
+        else
+        {
+            current = (current + 1) % patrolPoints.Length;
+        }
     }
+
 }

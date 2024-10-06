@@ -12,7 +12,6 @@ public class ShooterMechanic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
         //bullet.AddForce(Vector3.forward, ForceMode.Impulse);
     }
 
@@ -36,8 +35,13 @@ public class ShooterMechanic : MonoBehaviour
        
     }
 
+    // Destroys bullet upon collision. Makes an exception for the "Exception" tag.
+    // "Exception" is for objects like portals.
     void OnCollisionEnter(Collision other)
     {
-        Destroy(bullet.gameObject);
+        if(other.gameObject.tag != "Exception")
+        {
+            Destroy(bullet.gameObject);
+        }
     }
 }
