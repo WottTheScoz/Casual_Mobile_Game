@@ -191,7 +191,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -153, y: -244}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1056, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647283804
 MonoBehaviour:
@@ -864,7 +864,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -128.22, y: -75}
-  m_SizeDelta: {x: 100, y: 90}
+  m_SizeDelta: {x: 993.7, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033081230
 MonoBehaviour:
@@ -910,14 +910,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: Restart
-        m_Mode: 1
+      - m_Target: {fileID: 8819340683272527640, guid: be10d3f6ea77e544c9b8bd264ebe34f0, type: 3}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: Scenenavigation
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
