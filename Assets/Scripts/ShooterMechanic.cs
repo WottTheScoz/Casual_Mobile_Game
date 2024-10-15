@@ -42,10 +42,6 @@ public class ShooterMechanic : MonoBehaviour
         if(other.gameObject.tag != "Exception")
         {
             Destroy(bullet.gameObject);
-            if(other.gameObject.tag == "Enemy")
-            {
-                Destroy(other.gameObject);
-            }
         }
     }
 }
