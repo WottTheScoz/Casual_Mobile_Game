@@ -38,7 +38,7 @@ public class Turret : MonoBehaviour
 
         else
         {
-            turretTimer += 1 * Time.deltaTime;
+            turretTimer += Time.deltaTime;
         }
     }
 
