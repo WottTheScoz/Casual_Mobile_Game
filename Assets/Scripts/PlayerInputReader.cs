@@ -7,8 +7,9 @@ public class PlayerInputReader : MonoBehaviour
 {
     public PlayerInput playerControls;
 
-    public delegate void InputShootDelegate(Vector3 shootDirection);
-    public event InputShootDelegate OnShoot;
+    public delegate void InputDelegate();
+    public event InputDelegate OnMove;
+    public event InputDelegate OnShoot;
 
     InputAction move;
     InputAction fire;
@@ -18,6 +19,7 @@ public class PlayerInputReader : MonoBehaviour
     {
         move = playerControls.Player.Move;
         move.Enable();
+        move.started += Move;
 
         fire = playerControls.Player.Fire;
         fire.Enable();
@@ -80,11 +82,13 @@ public class PlayerInputReader : MonoBehaviour
     #endregion
 
     #region Input Actions
+    void Move(InputAction.CallbackContext context)
+    {
+        OnMove?.Invoke();
+    }
     void Shoot(InputAction.CallbackContext context)
     {
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        mousePos.z = mousePos.y;
-        OnShoot?.Invoke(mousePos);
+        OnShoot?.Invoke();
     }
 
     public Vector3 GetMoveDirection()

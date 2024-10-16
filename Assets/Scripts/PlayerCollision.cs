@@ -7,6 +7,10 @@ public class PlayerCollision : MonoBehaviour
 {
     public string obstacleTag = "Obstacle";
 
+    public GameObject pauseMenu;
+
+    public GameObject gameOver;
+
     public delegate void PlayerCollisionDelegate();
     public event PlayerCollisionDelegate OnHitObstacle;
 
@@ -25,7 +29,7 @@ public class PlayerCollision : MonoBehaviour
 
         if(collider.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene("GameOver");
+            gameOver.SetActive(true);
         }
     }
 }
