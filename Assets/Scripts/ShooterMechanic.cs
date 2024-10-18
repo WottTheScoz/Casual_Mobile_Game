@@ -9,12 +9,6 @@ public class ShooterMechanic : MonoBehaviour
     float regularTimer = 0;
     public float speed = 3;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //bullet.AddForce(Vector3.forward, ForceMode.Impulse);
-    }
-
     // Update is called once per frame
     void Update()
     {

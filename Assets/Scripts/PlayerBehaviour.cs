@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    public bool touchControls;
     public GameObject startNodeObj;
-
-    public bool usingTouchControls = false;
 
     Vector3 moveDirection;
 
     PlayerCollision collision;
     PlayerInputReader input;
-    SwipeControls swipeInput;
+    SwipeDetection swipeDetection;
 
     Node prevNode;
     Node currentNode;
@@ -27,12 +26,11 @@ public class PlayerBehaviour : MonoBehaviour
         // gets player input reader script
         input = gameObject.GetComponent<PlayerInputReader>();
 
-        // gets swipe controls script
-        swipeInput = gameObject.GetComponent<SwipeControls>();
+        // gets swipe detection script
+        swipeDetection = GetComponent<SwipeDetection>();
 
         // sets listeners to subscribers
         collision.OnHitObstacle += ToPrevNode;
-        input.OnMove += Rotate;
 
         // sets player to starting node
         transform.position = startNodeObj.transform.position;
@@ -62,38 +60,8 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     // Calls movement depending on player input
-    // INEFFICIENT: Will modify later on
     void InputToMovement(Vector3 inputDirection, GameObject targetNode)
     {
-        /*if (inputDirection == Vector3.forward)
-        {
-            if (Input.GetKeyDown("w"))
-            {
-                ToNextNode(inputDirection, targetNode);
-            }
-        }
-        else if (inputDirection == Vector3.back)
-        {
-            if (Input.GetKeyDown("s"))
-            {
-                ToNextNode(inputDirection, targetNode);
-            }
-        }
-        else if (inputDirection == Vector3.right)
-        {
-            if (Input.GetKeyDown("d"))
-            {
-                ToNextNode(inputDirection, targetNode);
-            }
-        }
-        else if (inputDirection == Vector3.left)
-        {
-            if (Input.GetKeyDown("a"))
-            {
-                ToNextNode(inputDirection, targetNode);
-            }
-        }*/
-
         if(inputDirection == moveDirection)
         {
             ToNextNode(inputDirection, targetNode);
@@ -121,23 +89,26 @@ public class PlayerBehaviour : MonoBehaviour
     // Gets the direction of the player's input (WASD/Swipe up, down, left, right)
     Vector3 UpdateMoveDirection()
     {
-        if(usingTouchControls)
+        if(touchControls)
         {
-            moveDirection = swipeInput.GetMoveDirection();
+            moveDirection = swipeDetection.GetMoveDirection();
         }
         else
         {
             moveDirection = input.GetMoveDirection();
         }
 
+        Rotate(moveDirection);
+
         return moveDirection;
     }
 
-    // Rotates the player based on input. Called with a delegate.
-    void Rotate()
+    void Rotate(Vector3 direction)
     {
-        //Debug.Log(moveDirection);
-        transform.rotation = Quaternion.LookRotation(UpdateMoveDirection());
+        if(direction.magnitude != 0)
+        {
+            transform.rotation = Quaternion.LookRotation(direction);
+        }
     }
     #endregion
 }
