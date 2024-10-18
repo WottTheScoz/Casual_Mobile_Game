@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneNavigation : MonoBehaviour
 {
-public void Scenenavigation(int SceneIndex)
+    public void Scenenavigation(int SceneIndex)
     {
         SceneManager.LoadScene(SceneIndex);
     }

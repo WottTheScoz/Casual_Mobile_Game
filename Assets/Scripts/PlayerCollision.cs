@@ -7,6 +7,10 @@ public class PlayerCollision : MonoBehaviour
 {
     public string obstacleTag = "Obstacle";
 
+    public GameObject pauseMenu;
+
+    public GameObject gameOver;
+
     public delegate void PlayerCollisionDelegate();
     public event PlayerCollisionDelegate OnHitObstacle;
 
@@ -18,14 +22,15 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("Hit obstacle");
         }
 
-        if(collider.gameObject.tag == "Exit")
+        /*if(collider.gameObject.tag == "Exit")
         {
             SceneManager.LoadScene("GameWin");
-        }
+        }*/
 
         if(collider.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene("GameOver");
+            gameOver.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
