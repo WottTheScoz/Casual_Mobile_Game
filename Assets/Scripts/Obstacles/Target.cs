@@ -7,10 +7,19 @@ public class Target : MonoBehaviour
     public delegate void TargetDelegate();
     public event TargetDelegate OnHit;
 
+    AudioSource targetSound;
+
+    private void Awake()
+    {
+        targetSound = GetComponent<AudioSource>();
+    }
+
     void OnTriggerEnter(Collider collider)
     {
+        
         if(collider.gameObject.tag == "Bullet")
         {
+            targetSound.Play();
             OnHit?.Invoke();
             SetActivity(false);
         }
