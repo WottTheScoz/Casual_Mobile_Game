@@ -17,8 +17,9 @@ GameObject:
   - component: {fileID: 7206713980177314657}
   - component: {fileID: 2227850862389265489}
   - component: {fileID: 3143995640566224336}
-  - component: {fileID: 1428679317350891094}
-  - component: {fileID: 7883607166693595376}
+  - component: {fileID: 1945431177249427896}
+  - component: {fileID: 8715838542439678692}
+  - component: {fileID: 1390305966469870814}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -126,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f890551ee4e8734c9fade1c8c57ed38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchControls: 1
   startNodeObj: {fileID: 0}
-  usingTouchControls: 0
 --- !u!114 &5029244827781013795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleTag: Obstacle
+  pauseMenu: {fileID: 0}
+  gameOver: {fileID: 0}
 --- !u!114 &7206713980177314657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +213,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1428679317350891094
+--- !u!114 &1945431177249427896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3763684843758345875, guid: d4dd8b5dc4991764bbc106156a2f49fc, type: 3}
---- !u!114 &7883607166693595376
+--- !u!114 &8715838542439678692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,9 +235,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3879386287800305973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24e41e015c7eed6459c881f10089e8c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f31c070cfbcad744aa85e25d349d81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1390305966469870814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879386287800305973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9e5074f8bf91e4b872566459f94e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 0.2
+  maximumTime: 1
+  directionThreshold: 0.9
 --- !u!1 &6977458443355166710
 GameObject:
   m_ObjectHideFlags: 0
