@@ -8,13 +8,14 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
 
-    float maxTimer = 5;
+    public float maxTimer = 2;
+    public float bufferOffset = 0;
     float turretTimer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        turretTimer -= bufferOffset;
     }
 
     // Update is called once per frame
@@ -37,7 +38,7 @@ public class Turret : MonoBehaviour
 
         else
         {
-            turretTimer += 1 * Time.deltaTime;
+            turretTimer += Time.deltaTime;
         }
     }
 

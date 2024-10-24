@@ -33,7 +33,7 @@ public class TurretBullet : MonoBehaviour
 
         if(collider.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("GameOver");
+            Destroy(collider.gameObject);
         }
     }
 }
