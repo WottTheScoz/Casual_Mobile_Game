@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/BGM.cs.meta
+guid: 30ae916ec2303434ca70a1082482ef31
+========
 guid: 34a202df4a03e354ba59d123ddbb5495
+>>>>>>>> main:Assets/LevelSceneController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

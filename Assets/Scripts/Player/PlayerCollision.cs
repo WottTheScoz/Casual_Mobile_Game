@@ -19,7 +19,6 @@ public class PlayerCollision : MonoBehaviour
         if(collider.gameObject.tag == obstacleTag)
         {
             OnHitObstacle?.Invoke();
-            Debug.Log("Hit obstacle");
         }
 
         /*if(collider.gameObject.tag == "Exit")

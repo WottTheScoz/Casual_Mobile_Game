@@ -6,8 +6,11 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public bool touchControls;
     public GameObject startNodeObj;
+    public AnimationCurve curve;
 
     Vector3 moveDirection;
+
+    Rigidbody rb;
 
     PlayerCollision collision;
     PlayerInputReader input;
@@ -15,16 +18,24 @@ public class PlayerBehaviour : MonoBehaviour
 
     Node prevNode;
     Node currentNode;
+    Node nextNode;
+
+    States currentState = States.Stationary;
+
+    float elapsedTime;
 
     #region Unity Methods
     // Start is called before the first frame update
     void Start()
     {
+        // gets the player's rigidbody
+        rb = GetComponent<Rigidbody>();
+
         // gets the player's collision script.
-        collision = gameObject.GetComponent<PlayerCollision>();
+        collision = GetComponent<PlayerCollision>();
 
         // gets player input reader script
-        input = gameObject.GetComponent<PlayerInputReader>();
+        input = GetComponent<PlayerInputReader>();
 
         // gets swipe detection script
         swipeDetection = GetComponent<SwipeDetection>();
@@ -40,12 +51,27 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateMoveDirection();
-        NodeMovement();
+        if (currentState == States.Moving)
+        {
+            elapsedTime += Time.deltaTime;
+            float percentCompleted = elapsedTime * 1f;
+            NodeInterpolation(currentNode, nextNode, curve.Evaluate(percentCompleted));
+
+            if (transform.position == nextNode.transform.position)
+            {
+                currentState = States.Stationary;
+                prevNode = currentNode;
+                currentNode = nextNode.GetComponent<Node>();
+            }
+        }
+        else 
+        {
+            Stationary();
+        }
     }
     #endregion
 
-    #region Node System
+    #region Node System / Movement
     // determines which node to move to and where it's located relative to current node
     void NodeMovement()
     {
@@ -71,20 +97,26 @@ public class PlayerBehaviour : MonoBehaviour
     // Handles actual movement of the player to the next node
     void ToNextNode(Vector3 inputDirection, GameObject targetNode)
     {
-        transform.position = targetNode.transform.position;
-        prevNode = currentNode;
-        currentNode = targetNode.GetComponent<Node>();
+        //prevNode = currentNode;
+        //currentNode = targetNode.GetComponent<Node>();
+        nextNode = targetNode.GetComponent<Node>();
+       currentState = States.Moving;
     }
 
-    // Returns player to previous node. Used by PlayerCollision
+    void NodeInterpolation(Node beginNode, Node endNode, float percentCompleted) 
+    {
+        transform.position = Vector3.Lerp(beginNode.transform.position, endNode.transform.position, percentCompleted);
+    }
+
+    // Returns player to current node. Used by PlayerCollision
     void ToPrevNode()
     {
-        transform.position = prevNode.gameObject.transform.position;
-        currentNode = prevNode;
+        currentState = States.Stationary;
+        transform.position = currentNode.gameObject.transform.position;
     }
     #endregion
 
-    #region Movement
+    #region Get Direction
 
     // Gets the direction of the player's input (WASD/Swipe up, down, left, right)
     Vector3 UpdateMoveDirection()
@@ -109,6 +141,26 @@ public class PlayerBehaviour : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(direction);
         }
+    }
+    #endregion
+
+    #region States
+
+    void Stationary() 
+    {
+        UpdateMoveDirection();
+        NodeMovement();
+
+        if (elapsedTime != 0)
+        {
+            elapsedTime = 0;
+        }
+    }
+
+    enum States 
+    {
+        Stationary,
+        Moving
     }
     #endregion
 }

@@ -114,7 +114,9 @@ public class SwipeDetection : MonoBehaviour
     // public getter for moveDirection. Done this way to retain GetMoveDirection naming convention.
     public Vector3 GetMoveDirection()
     {
-        return moveDirection;
+        Vector3 tempMoveDirection = moveDirection;
+        moveDirection = Vector3.zero;
+        return tempMoveDirection;
     }
     #endregion
 }
