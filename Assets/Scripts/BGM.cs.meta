@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/BGM.cs.meta
+guid: bd10f450537621a4ca37f3f8bef130fd
+========
+guid: 34a202df4a03e354ba59d123ddbb5495
+>>>>>>>> main:Assets/LevelSceneController.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
