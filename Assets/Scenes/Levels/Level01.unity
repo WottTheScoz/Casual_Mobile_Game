@@ -874,19 +874,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
   m_Center: {x: 0.000000004656613, y: 0.000000059604645, z: 0.0000000018626451}
---- !u!114 &249570112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249570107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 568a89a13ae2c3540b75b4b20871e229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectedTarget: {fileID: 1261854890}
 --- !u!1 &253595172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,7 +3420,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.6
+  orthographic size: 24.1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3632,7 +3619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02fd3c0bad6402b4fbb6ce8c4deebaca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.017
+      value: 7.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02fd3c0bad6402b4fbb6ce8c4deebaca, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6639,15 +6626,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.71
+      value: 1.3414483
       objectReference: {fileID: 0}
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.666638
+      value: 0.39000034
       objectReference: {fileID: 0}
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.98
+      value: 7.0360794
       objectReference: {fileID: 0}
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6689,7 +6676,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: door (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4474384731628868070, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -6702,9 +6690,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1447391008831276436, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 249570111}
-    - targetCorrespondingSourceObject: {fileID: 1447391008831276436, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 249570112}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
 --- !u!1 &1974386391
 GameObject:
@@ -7657,15 +7642,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.741447
+      value: 6.31
       objectReference: {fileID: 0}
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.666638
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.98608
+      value: 3.03
       objectReference: {fileID: 0}
     - target: {fileID: 121960085062655799, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7703,7 +7688,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: door
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4474384731628868070, guid: 0fb4894e579917b42aaa54c0b085fb43, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
