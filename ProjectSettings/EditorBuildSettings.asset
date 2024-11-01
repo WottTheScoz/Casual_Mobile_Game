@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/Scenes/1_Menus/HowToPlay.unity
     guid: 3c36d1946a246ac41804c7ac84d241cd
   - enabled: 1
-    path: Assets/Scenes/Levels/Level01.unity
+    path: Assets/Scenes/Levels/Tutorial_Story.unity
     guid: 796b6cd2dbdaf2e4481edf6667f60341
   - enabled: 1
-    path: Assets/Scenes/Levels/Level02.unity
+    path: Assets/Scenes/Levels/Level4_Story.unity
     guid: b64f22a88f7b1f147ba935e95caa12fc
   - enabled: 1
-    path: Assets/Scenes/Levels/Level03.unity
+    path: Assets/Scenes/Levels/Level1_Story.unity
     guid: b17141c1514a75d4e9a1b3033b617125
   - enabled: 1
-    path: Assets/Scenes/Levels/Level04.unity
+    path: Assets/Scenes/Levels/Level2_Story.unity
     guid: 4ee24acf460d6bf4d98e5410fab12d47
   - enabled: 1
     path: Assets/Scenes/1_Menus/WIP.unity
