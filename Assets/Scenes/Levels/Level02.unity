@@ -4871,6 +4871,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 1505366144}
     m_Modifications:
     - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
+      propertyPath: m_Color.b
+      value: 0.78959596
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
+      propertyPath: m_Color.g
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
+      propertyPath: m_Intensity
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
       propertyPath: m_Shadows.m_Type
       value: 0
       objectReference: {fileID: 0}
@@ -6407,19 +6423,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
       propertyPath: m_Color.b
-      value: 0.59213173
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
-      propertyPath: m_Color.g
       value: 0.8980392
       objectReference: {fileID: 0}
     - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
-      propertyPath: m_Color.r
+      propertyPath: m_Color.g
       value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
+      propertyPath: m_Color.r
+      value: 0.82795256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6958846105721432872, guid: b24e26d6678b60640b3acb5215394961, type: 3}
       propertyPath: m_Shadows.m_Type
