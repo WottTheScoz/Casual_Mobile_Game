@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
-  m_Name: UILayer
+  m_Name: Main Camera Profile
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 7556898402061261102}
---- !u!114 &7556898402061261102
+  - {fileID: 2901258402133952197}
+--- !u!114 &2901258402133952197
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26,16 +26,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 1.04
+    value: 63.37
   threshold:
     overrideState: 1
-    value: 0.76
+    value: 2.71
   softKnee:
     overrideState: 1
     value: 0.5
