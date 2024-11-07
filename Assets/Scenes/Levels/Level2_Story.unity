@@ -4997,7 +4997,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 19
+  orthographic size: 24.1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -15728,15 +15728,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6928825406100863439, guid: 0bd4ada3b13b3b14083402af7292e7d4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.795441
+      value: 11.23
       objectReference: {fileID: 0}
     - target: {fileID: 6928825406100863439, guid: 0bd4ada3b13b3b14083402af7292e7d4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.880319
+      value: 11.428767
       objectReference: {fileID: 0}
     - target: {fileID: 6928825406100863439, guid: 0bd4ada3b13b3b14083402af7292e7d4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.795441
+      value: 11.23
       objectReference: {fileID: 0}
     - target: {fileID: 6928825406100863439, guid: 0bd4ada3b13b3b14083402af7292e7d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16773,6 +16773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7263013494627475718, guid: 67c124e071f52f0408e08010395ad7f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61bc9e9b98ea35a40ad9a219788a0146, type: 2}
     - target: {fileID: 8960959598032204860, guid: 67c124e071f52f0408e08010395ad7f3, type: 3}
       propertyPath: m_Intensity
       value: 0
@@ -18201,6 +18205,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7263013494627475718, guid: 67c124e071f52f0408e08010395ad7f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61bc9e9b98ea35a40ad9a219788a0146, type: 2}
     - target: {fileID: 8960959598032204860, guid: 67c124e071f52f0408e08010395ad7f3, type: 3}
       propertyPath: m_Intensity
       value: 0
@@ -20658,6 +20666,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.90999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3422427
+      objectReference: {fileID: 0}
+    - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.42982483
+      objectReference: {fileID: 0}
     - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: startNodeObj
       value: 
@@ -20672,7 +20692,7 @@ PrefabInstance:
       objectReference: {fileID: 1611063165}
     - target: {fileID: 6987974036266943311, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8656227818480894775, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.x
