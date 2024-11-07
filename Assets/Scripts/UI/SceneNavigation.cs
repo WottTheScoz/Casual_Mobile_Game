@@ -10,4 +10,9 @@ public class SceneNavigation : MonoBehaviour
         SceneManager.LoadScene(SceneIndex);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
