@@ -6,12 +6,14 @@ public class EnemyDatabase : MonoBehaviour
 {
     public int maxHealth;
     public Healthbar healthbar;
+    AudioSource hitSound;
 
     private int curHealth;
     // Start is called before the first frame update
     void Start()
     {
         curHealth = maxHealth;
+        hitSound = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(int damage)
@@ -30,6 +32,7 @@ public class EnemyDatabase : MonoBehaviour
         if(other.gameObject.tag == "Bullet")
         {
             TakeDamage(2);
+            hitSound.Play();
         }
     }
 }
