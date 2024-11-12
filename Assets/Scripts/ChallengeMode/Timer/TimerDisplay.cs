@@ -7,8 +7,6 @@ public class TimerDisplay : MonoBehaviour
 {
     public GameObject levelTimerObj;
 
-    //int timerVal;
-
     TextMeshProUGUI tmpro;
 
     LevelTimer levelTimer;
@@ -29,14 +27,14 @@ public class TimerDisplay : MonoBehaviour
     // Receives notification that timer is counting down
     void Countdown(float timer)
     {
-        int timerVal = (int)timer;
-        ChangeText(timerVal);
+        ChangeText(timer);
     }
 
     // Changes on-screen text to display timer
-    void ChangeText(int timerVal)
+    void ChangeText(float timerVal)
     {
-        tmpro.text = timerVal.ToString();
+        string timerValString = string.Format("{0:N2}", timerVal);
+        tmpro.text = timerValString;
     }
     #endregion
 }

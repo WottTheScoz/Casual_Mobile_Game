@@ -6,6 +6,8 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject bullet;
 
+    public GameObject playerGun;
+
     PlayerInputReader inputReader;
 
     AudioSource gunSound;
@@ -21,7 +23,7 @@ public class PlayerShooting : MonoBehaviour
     {
         gunSound.Play();
 
-        GameObject bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
+        GameObject bulletInstance = Instantiate(bullet, playerGun.transform.position, Quaternion.identity);
             
         bulletInstance.GetComponent<ShooterMechanic>().shoot(transform.forward);
     }

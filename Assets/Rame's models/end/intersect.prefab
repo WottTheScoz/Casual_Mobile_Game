@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1221852360084203595}
   - component: {fileID: 8980311963759042047}
   - component: {fileID: 859769017219541659}
-  - component: {fileID: 6003232878273665100}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -84,29 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6003232878273665100
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621734847069293577}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &4191080229342826950
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +94,6 @@ GameObject:
   - component: {fileID: 4634328380776275678}
   - component: {fileID: 4312875752668636537}
   - component: {fileID: 4408701934186805976}
-  - component: {fileID: 7761932264840790567}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Untagged
@@ -191,29 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7761932264840790567
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4191080229342826950}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &8012749922658799165
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +177,6 @@ GameObject:
   - component: {fileID: 7388015747965807650}
   - component: {fileID: 1996933005949193872}
   - component: {fileID: 4723900181732315456}
-  - component: {fileID: 8189844316937241320}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -298,29 +249,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8189844316937241320
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012749922658799165}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &8248631701481144114
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +260,6 @@ GameObject:
   - component: {fileID: 8939193671986131581}
   - component: {fileID: 6868789513134294492}
   - component: {fileID: 8712013748741553123}
-  - component: {fileID: 7865905388265047450}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -405,29 +332,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7865905388265047450
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8248631701481144114}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &8306819791157148380
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +343,6 @@ GameObject:
   - component: {fileID: 7321231755772293200}
   - component: {fileID: 4941507164250754305}
   - component: {fileID: 1761862055847696410}
-  - component: {fileID: 2654724801445487994}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Untagged
@@ -512,29 +415,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2654724801445487994
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8306819791157148380}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1001 &4450247303489581490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -544,16 +424,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.53154
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.53154
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.53154
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.125968
+      value: 1.003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.14098728
+      value: -0.101
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.145758
+      value: 2.993
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2cca97de5c40a564aaa07ce8ad967316, type: 3}
       propertyPath: m_LocalRotation.w
