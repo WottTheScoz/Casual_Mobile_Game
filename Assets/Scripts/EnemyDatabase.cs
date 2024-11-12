@@ -6,9 +6,11 @@ public class EnemyDatabase : MonoBehaviour
 {
     public int maxHealth;
     public Healthbar healthbar;
+    public GameObject DatabaseTotalObj;
     AudioSource hitSound;
 
     private int curHealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class EnemyDatabase : MonoBehaviour
 
         if(curHealth == 0)
         {
+            DatabaseTotalObj.GetComponent<DatabaseTotal>().DecrementDatabase();
             Destroy(gameObject);
         }
     }

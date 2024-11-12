@@ -6153,6 +6153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patrolling Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8879147258676373910, guid: cb4f1c63c0e8d0d428ca7aff4b477053, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
