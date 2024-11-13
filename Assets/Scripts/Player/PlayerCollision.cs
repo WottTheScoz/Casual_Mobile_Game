@@ -65,6 +65,7 @@ public class PlayerCollision : MonoBehaviour
         if(collider.gameObject.tag == "Enemy")
         {
             gameOver.SetActive(true);
+            Time.timeScale = 0;
             Destroy(gameObject);
         }
     }

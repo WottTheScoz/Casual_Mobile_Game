@@ -8567,6 +8567,14 @@ PrefabInstance:
       propertyPath: bufferOffset
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 34727727578153956, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
+    - target: {fileID: 119653614572821889, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
     - target: {fileID: 408662218484663089, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
       propertyPath: m_Name
       value: Turret (2)
@@ -8575,10 +8583,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1120822611784395200, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
+    - target: {fileID: 3757259495845728321, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
     - target: {fileID: 7482034245459622253, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7792419538565963394, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
     - target: {fileID: 9033500041626671197, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -12176,7 +12196,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871104185}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -14577,6 +14597,14 @@ PrefabInstance:
       propertyPath: bufferOffset
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 34727727578153956, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
+    - target: {fileID: 119653614572821889, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
     - target: {fileID: 408662218484663089, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
       propertyPath: m_Name
       value: Turret (3)
@@ -14585,10 +14613,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1120822611784395200, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
+    - target: {fileID: 3757259495845728321, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
     - target: {fileID: 7482034245459622253, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7792419538565963394, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e26565c4cc10eed429fe7b6102984d30, type: 2}
     - target: {fileID: 9033500041626671197, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.9999986
@@ -29089,7 +29129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed9fff0d6305d44b87e6e750765204a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimer: 10
+  maxTimer: 20
   gameOverCanvas: {fileID: 871104185}
 --- !u!4 &2069703920
 Transform:

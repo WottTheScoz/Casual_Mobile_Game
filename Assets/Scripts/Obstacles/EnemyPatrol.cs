@@ -25,6 +25,9 @@ public class EnemyPatrol : MonoBehaviour
         else
         {
             current = (current + 1) % patrolPoints.Length;
+
+            // Turns enemy around after reaching patrolpoint
+            transform.rotation = Quaternion.LookRotation(transform.forward * -1);
         }
     }
 
