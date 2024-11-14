@@ -14,7 +14,7 @@ public class PlayerCollision : MonoBehaviour
     public delegate void PlayerCollisionDelegate();
     public event PlayerCollisionDelegate OnHitObstacle;
 
-    private static PlayerCollision _instance;
+    /*private static PlayerCollision _instance;
 
     [SerializeField] private int _chips;
 
@@ -48,7 +48,7 @@ public class PlayerCollision : MonoBehaviour
     public void AddChips()
     {
         _chips++;
-    }
+    }*/
 
     void OnTriggerEnter(Collider collider)
     {

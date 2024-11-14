@@ -9,7 +9,7 @@ public class MicrochipCollect : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            PlayerCollision.Instance.AddChips();
+            //PlayerCollision.Instance.AddChips();
             Destroy(this.gameObject);
         }
     }
