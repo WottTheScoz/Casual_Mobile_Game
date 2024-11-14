@@ -41,4 +41,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1_Menus/Credits.unity
     guid: 29e95dc2283c9784ab2beb56c6a84917
+  - enabled: 1
+    path: Assets/Scenes/1_Menus/ChallengeMode.unity
+    guid: 4d4929845c94c694aa72149f376eb212
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level1_ChallengeMode.unity
+    guid: a08fa45ed4996464e8728195e213cc24
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2_ChallengeMode.unity
+    guid: f611909a1622e0949974770fa0691a53
+  - enabled: 1
+    path: Assets/Scenes/1_Menus/Thank_You_Challenge.unity
+    guid: 93a754c83d5669a4a8ca4ffbfee92029
   m_configObjects: {}

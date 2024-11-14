@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - Enemy
   - Exception
+  - Boss Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - Player
   - Bullet
-  - 
+  - Enemy
   - 
   - UI-PostProcessing
   - 
