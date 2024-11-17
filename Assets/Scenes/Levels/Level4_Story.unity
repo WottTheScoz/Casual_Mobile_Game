@@ -1336,6 +1336,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d79473c54fd004843aeb207c23b0c7f4, type: 2}
+    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5afc81222b72bc64eab970e95737dfc2, type: 3}
+    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: fe538a82cb999364da273b5ea8395955, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4528,7 +4536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.824524, y: -32}
+  m_AnchoredPosition: {x: 4.824463, y: -32}
   m_SizeDelta: {x: 85, y: 90}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &923825804
@@ -9973,6 +9981,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d79473c54fd004843aeb207c23b0c7f4, type: 2}
+    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5afc81222b72bc64eab970e95737dfc2, type: 3}
+    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: fe538a82cb999364da273b5ea8395955, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
