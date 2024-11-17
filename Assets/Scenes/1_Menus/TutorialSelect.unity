@@ -653,7 +653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ZONE 2
+  m_text: CHALLENGE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b77628b7fb87bd459438685ba1ad648, type: 2}
   m_sharedMaterial: {fileID: -5823411693984111917, guid: 9b77628b7fb87bd459438685ba1ad648, type: 2}
@@ -1475,7 +1475,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 14
+          m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1737,7 +1737,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 13
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2093,7 +2093,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ZONE 1
+  m_text: STORY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b77628b7fb87bd459438685ba1ad648, type: 2}
   m_sharedMaterial: {fileID: -5823411693984111917, guid: 9b77628b7fb87bd459438685ba1ad648, type: 2}
@@ -2431,7 +2431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Challenge
+  m_text: tutorials
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df8794d6135ec994aa50185cf3969b50, type: 2}
   m_sharedMaterial: {fileID: -880179790612523947, guid: df8794d6135ec994aa50185cf3969b50, type: 2}
