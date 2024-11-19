@@ -20630,7 +20630,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.90999985
+      value: -0.752
       objectReference: {fileID: 0}
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20652,6 +20652,18 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1611063165}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.2784314
+      objectReference: {fileID: 0}
     - target: {fileID: 6987974036266943311, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_Enabled
       value: 0

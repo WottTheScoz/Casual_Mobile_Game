@@ -11143,15 +11143,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.40999985
+      value: -0.602
       objectReference: {fileID: 0}
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8422426
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5701752
+      value: -0.162
       objectReference: {fileID: 0}
     - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: startNodeObj
@@ -11177,6 +11177,26 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1562402438}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.97594345
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.2783019
+      objectReference: {fileID: 0}
     - target: {fileID: 8656227818480894775, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.3199997

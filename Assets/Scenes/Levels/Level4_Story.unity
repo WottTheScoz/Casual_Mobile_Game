@@ -9037,7 +9037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.86
+      value: 0.197
       objectReference: {fileID: 0}
     - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: startNodeObj
@@ -9055,6 +9055,18 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1489283821}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784343017115970839, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.2784314
+      objectReference: {fileID: 0}
     - target: {fileID: 8656227818480894775, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
