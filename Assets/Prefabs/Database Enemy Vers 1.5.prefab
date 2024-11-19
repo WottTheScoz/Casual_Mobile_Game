@@ -222,7 +222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   healthbar: {fileID: 4051464977682046474}
-  DatabaseTotalObj: {fileID: 0}
 --- !u!82 &1989429776014495708
 AudioSource:
   m_ObjectHideFlags: 0
