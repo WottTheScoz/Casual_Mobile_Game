@@ -1336,14 +1336,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d79473c54fd004843aeb207c23b0c7f4, type: 2}
-    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5afc81222b72bc64eab970e95737dfc2, type: 3}
-    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: fe538a82cb999364da273b5ea8395955, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4536,7 +4528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.824463, y: -32}
+  m_AnchoredPosition: {x: 4.824585, y: -32}
   m_SizeDelta: {x: 85, y: 90}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &923825804
@@ -7031,6 +7023,7 @@ GameObject:
   - component: {fileID: 1505366143}
   - component: {fileID: 1505366142}
   - component: {fileID: 1505366141}
+  - component: {fileID: 1505366145}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7176,6 +7169,23 @@ Transform:
   - {fileID: 1669022237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 40.486, y: -45, z: 0}
+--- !u!114 &1505366145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505366140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: e053f11db1b36a545acde70ad0452d51, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1001 &1539280456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9051,6 +9061,10 @@ PrefabInstance:
       propertyPath: startNodeObj
       value: 
       objectReference: {fileID: 841492504}
+    - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: touchControls
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3879386287800305973, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_Name
       value: Player
@@ -9981,14 +9995,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d79473c54fd004843aeb207c23b0c7f4, type: 2}
-    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5afc81222b72bc64eab970e95737dfc2, type: 3}
-    - target: {fileID: 4346501004762094893, guid: 044c56017403f114bbdd66cab410cb3c, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: fe538a82cb999364da273b5ea8395955, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
