@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Threading.Tasks;
 
 [DefaultExecutionOrder(-1)]
 public class InputManager : MonoBehaviour
@@ -38,8 +39,9 @@ public class InputManager : MonoBehaviour
         playerControls.Touch.PrimaryContact.canceled += ctx => EndTouchPrimary(ctx);
     }
 
-    void StartTouchPrimary(InputAction.CallbackContext context)
+    async void StartTouchPrimary(InputAction.CallbackContext context)
     {
+        await Task.Delay(50);
         Vector2 position = playerControls.Touch.PrimaryPosition.ReadValue<Vector2>();
         if(OnStartTouch != null) OnStartTouch(Utils.ScreenToWorld(mainCamera, position), (float)context.startTime);
     }
