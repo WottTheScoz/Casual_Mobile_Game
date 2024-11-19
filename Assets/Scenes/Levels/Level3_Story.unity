@@ -4012,7 +4012,7 @@ Transform:
   m_GameObject: {fileID: 541882999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -24.93, y: 0.47, z: -6}
+  m_LocalPosition: {x: 0.4, y: 2.82, z: -2.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7214,7 +7214,7 @@ Transform:
   m_GameObject: {fileID: 992454447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -24.67, y: 0.47, z: -4.94}
+  m_LocalPosition: {x: 0.53, y: 3.21, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7233,7 +7233,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0, g: 0.9823983, b: 1, a: 1}
   m_Intensity: 5
-  m_Range: 2
+  m_Range: 2.393941
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -13414,6 +13414,10 @@ PrefabInstance:
       propertyPath: startNodeObj
       value: 
       objectReference: {fileID: 841492504}
+    - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: touchControls
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3879386287800305973, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_Name
       value: Player
