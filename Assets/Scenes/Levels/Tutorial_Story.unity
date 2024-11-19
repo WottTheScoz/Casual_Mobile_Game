@@ -3278,18 +3278,6 @@ PrefabInstance:
       value: chair1 (21)
       objectReference: {fileID: 0}
     - target: {fileID: 4082142950641960, guid: 1dd53bfeddd31c8438f1ccec6faf5f1d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3482941
-      objectReference: {fileID: 0}
-    - target: {fileID: 4082142950641960, guid: 1dd53bfeddd31c8438f1ccec6faf5f1d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9722144
-      objectReference: {fileID: 0}
-    - target: {fileID: 4082142950641960, guid: 1dd53bfeddd31c8438f1ccec6faf5f1d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3482941
-      objectReference: {fileID: 0}
-    - target: {fileID: 4082142950641960, guid: 1dd53bfeddd31c8438f1ccec6faf5f1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.611
       objectReference: {fileID: 0}
@@ -16555,10 +16543,6 @@ PrefabInstance:
       propertyPath: startNodeObj
       value: 
       objectReference: {fileID: 841492504}
-    - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
-      propertyPath: touchControls
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1730415896876619004, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
