@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Threading.Tasks;
 
 [DefaultExecutionOrder(-1)]
 public class InputManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class InputManager : MonoBehaviour
 
     PlayerInput playerControls;
     Camera mainCamera;
+
+    State startTouch = State.Initial;
 
     void Awake()
     {
@@ -38,8 +41,13 @@ public class InputManager : MonoBehaviour
         playerControls.Touch.PrimaryContact.canceled += ctx => EndTouchPrimary(ctx);
     }
 
-    void StartTouchPrimary(InputAction.CallbackContext context)
+    async void StartTouchPrimary(InputAction.CallbackContext context)
     {
+        if(startTouch == State.Initial)
+        {
+            await Task.Delay(50);
+            startTouch = State.Consecutive;
+        }
         Vector2 position = playerControls.Touch.PrimaryPosition.ReadValue<Vector2>();
         if(OnStartTouch != null) OnStartTouch(Utils.ScreenToWorld(mainCamera, position), (float)context.startTime);
     }
@@ -55,4 +63,12 @@ public class InputManager : MonoBehaviour
         Vector2 position = playerControls.Touch.PrimaryPosition.ReadValue<Vector2>();
         return Utils.ScreenToWorld(mainCamera, position);
     }
+
+    #region Enums
+    enum State
+    {
+        Initial,
+        Consecutive
+    }
+    #endregion
 }
