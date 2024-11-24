@@ -59,6 +59,8 @@ public class SwipeDetection : MonoBehaviour
         float distance = Vector3.Distance(startPosition, endPosition);
         float time = endTime - startTime;
 
+        //Debug.Log("Start Position: " + startPosition + ", End Position: " + endPosition);
+
         if((distance >= minimumDistance) && (time <= maximumTime))
         {
             Vector3 direction = endPosition - startPosition;
@@ -74,12 +76,20 @@ public class SwipeDetection : MonoBehaviour
     // Modifies moveDirection value after successful swipe
     void SwipeDirection(Vector2 direction)
     {
-        Vector2[] diagonals = 
+        /*Vector2[] diagonals = 
         {
             new Vector2(1, 1),
             new Vector2(-1, 1),
             new Vector2(1, -1),
             new Vector2(-1, -1)
+        };*/
+
+        Vector2[] diagonals = 
+        {
+            Vector2.up,
+            Vector2.down,
+            Vector2.right,
+            Vector2.left
         };
 
         // compares each diagonal direction to the given swipe direction using dot product and directionThreshold
@@ -99,9 +109,20 @@ public class SwipeDetection : MonoBehaviour
     {
         Vector3 newDirection;
 
+        /*
         if((direction2D.x + direction2D.y) != 0)
         {
             newDirection = new Vector3(0, 0, direction2D.x);
+        }
+        else
+        {
+            newDirection = new Vector3(direction2D.x, 0, 0);
+        }
+        */
+
+        if(direction2D.x == 0)
+        {
+            newDirection = new Vector3(0, 0, direction2D.y);
         }
         else
         {

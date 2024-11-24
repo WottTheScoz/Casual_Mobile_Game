@@ -279,7 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumDistance: 0.2
   maximumTime: 1
-  directionThreshold: 0.9
+  directionThreshold: 0.5
 --- !u!82 &4968892417079831172
 AudioSource:
   m_ObjectHideFlags: 0
