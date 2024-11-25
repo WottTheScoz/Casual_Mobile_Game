@@ -15,6 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     PlayerCollision collision;
     PlayerInputReader input;
     SwipeDetection swipeDetection;
+    public TempAnim anim;
 
     Node prevNode;
     Node currentNode;
@@ -46,6 +47,7 @@ public class PlayerBehaviour : MonoBehaviour
         // sets player to starting node
         transform.position = startNodeObj.transform.position;
         currentNode = startNodeObj.GetComponent<Node>();
+
     }
 
     // Update is called once per frame
@@ -56,6 +58,7 @@ public class PlayerBehaviour : MonoBehaviour
             elapsedTime += Time.deltaTime;
             float percentCompleted = elapsedTime * 1f;
             NodeInterpolation(currentNode, nextNode, curve.Evaluate(percentCompleted));
+            anim.WalkAnim();
 
             if (transform.position == nextNode.transform.position)
             {

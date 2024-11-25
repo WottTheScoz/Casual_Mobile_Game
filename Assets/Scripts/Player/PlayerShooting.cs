@@ -12,6 +12,8 @@ public class PlayerShooting : MonoBehaviour
 
     AudioSource gunSound;
 
+    public TempAnim anim;
+
     void Start()
     {
         inputReader = gameObject.GetComponent<PlayerInputReader>();                         // gets input reader to know when to shoot
@@ -26,5 +28,7 @@ public class PlayerShooting : MonoBehaviour
         GameObject bulletInstance = Instantiate(bullet, playerGun.transform.position, Quaternion.identity);
             
         bulletInstance.GetComponent<ShooterMechanic>().shoot(transform.forward);
+
+        anim.ShootAnim();
     }
 }
