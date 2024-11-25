@@ -7509,6 +7509,10 @@ PrefabInstance:
       value: micro chip (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1985640012086331362, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985640012086331362, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -18275,6 +18279,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5307557810163457539, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'World'\n\tTransform 'Hip_R'\n\tTransform
+        'Elbow_L'\n\tTransform 'Upper_Chest'\n\tTransform 'Knee_R'\n\tTransform 'Shoulder_L'\n\tTransform
+        'Elbow_R'\n\tTransform 'Shoulder_R'\n\tTransform 'Middle_Chest'\n\tTransform
+        'joint1'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom animation
+        clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     - target: {fileID: 865199495572392730, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.602
@@ -18291,10 +18305,6 @@ PrefabInstance:
       propertyPath: startNodeObj
       value: 
       objectReference: {fileID: 841492504}
-    - target: {fileID: 1636295594161238478, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
-      propertyPath: touchControls
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2836953739709329996, guid: ccfa42bd5c5870b4ba15131031f32742, type: 3}
       propertyPath: m_IsActive
       value: 1

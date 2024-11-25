@@ -5692,6 +5692,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &594904534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2613582066084124430, guid: 67c124e071f52f0408e08010395ad7f3, type: 3}
+  m_PrefabInstance: {fileID: 1678780851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &613222442
 GameObject:
   m_ObjectHideFlags: 0
@@ -7846,6 +7851,11 @@ PrefabInstance:
       addedObject: {fileID: 1073614277}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93957edb2f76e8544a796ac03e3c3a7b, type: 3}
+--- !u!1 &821350612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2613582066084124430, guid: 67c124e071f52f0408e08010395ad7f3, type: 3}
+  m_PrefabInstance: {fileID: 1780838979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &824687870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9507,7 +9517,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: micro chip
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6792570822595912260, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 594904534}
+    m_RemovedComponents:
+    - {fileID: 5714227973668142311, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1208576303104859480, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
@@ -24002,7 +24017,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: micro chip (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6792570822595912260, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 821350612}
+    m_RemovedComponents:
+    - {fileID: 5714227973668142311, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1208576303104859480, guid: 5ffc8b9074722ba4089e228e6f6a9513, type: 3}
