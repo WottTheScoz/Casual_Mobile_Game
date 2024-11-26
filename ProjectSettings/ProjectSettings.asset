@@ -162,7 +162,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Team4.Omega_Directive
-    Standalone: com.DefaultCompany.Casual-Game
+    Standalone: com.Team4.Omega-Directive
   buildNumber:
     Standalone: 0
     VisionOS: 0
